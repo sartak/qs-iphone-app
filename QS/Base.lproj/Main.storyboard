@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +12,79 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4b-4P-gwc">
+                                <rect key="frame" x="172" y="210" width="31" height="30"/>
+                                <state key="normal" title="Ping"/>
+                                <connections>
+                                    <action selector="tapDiscreteEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bvg-5g-bbj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-T9-oEb">
+                                <rect key="frame" x="172" y="172" width="30" height="30"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="tapDiscreteEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dnd-Lf-VKk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evR-nT-vnO">
+                                <rect key="frame" x="159" y="58" width="57" height="30"/>
+                                <state key="normal" title="Bedtime"/>
+                                <connections>
+                                    <action selector="tapDiscreteEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QdO-wZ-MLD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PE-Q5-9Q2">
+                                <rect key="frame" x="146" y="96" width="83" height="30"/>
+                                <state key="normal" title="Brush Teeth"/>
+                                <connections>
+                                    <action selector="tapDiscreteEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UfN-pw-abJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jh-C5-v1c">
+                                <rect key="frame" x="156" y="20" width="62" height="30"/>
+                                <state key="normal" title="Wake Up"/>
+                                <connections>
+                                    <action selector="tapDiscreteEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sn6-36-pGN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvH-af-xFa">
+                                <rect key="frame" x="162" y="134" width="52" height="30"/>
+                                <state key="normal" title="Vitamin"/>
+                                <connections>
+                                    <action selector="tapDiscreteEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1PM-Au-gBh"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="094-rA-Lm3">
+                                <rect key="frame" x="177" y="248" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="evR-nT-vnO" firstAttribute="top" secondItem="5Jh-C5-v1c" secondAttribute="bottom" constant="8" symbolic="YES" id="B83-nq-lCC"/>
+                            <constraint firstItem="o4b-4P-gwc" firstAttribute="top" secondItem="aZA-T9-oEb" secondAttribute="bottom" constant="8" symbolic="YES" id="DJo-8S-rUc"/>
+                            <constraint firstItem="4PE-Q5-9Q2" firstAttribute="top" secondItem="evR-nT-vnO" secondAttribute="bottom" constant="8" symbolic="YES" id="Gbd-MD-EIV"/>
+                            <constraint firstItem="5Jh-C5-v1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iuy-ze-SHu"/>
+                            <constraint firstItem="aZA-T9-oEb" firstAttribute="top" secondItem="lvH-af-xFa" secondAttribute="bottom" constant="8" symbolic="YES" id="PJO-Dp-RJV"/>
+                            <constraint firstItem="evR-nT-vnO" firstAttribute="centerX" secondItem="4PE-Q5-9Q2" secondAttribute="centerX" id="QVn-6e-kEx"/>
+                            <constraint firstItem="aZA-T9-oEb" firstAttribute="leading" secondItem="o4b-4P-gwc" secondAttribute="leading" id="TDR-tE-rmw"/>
+                            <constraint firstItem="lvH-af-xFa" firstAttribute="top" secondItem="4PE-Q5-9Q2" secondAttribute="bottom" constant="8" symbolic="YES" id="XQc-Ya-21W"/>
+                            <constraint firstItem="4PE-Q5-9Q2" firstAttribute="centerX" secondItem="aZA-T9-oEb" secondAttribute="centerX" id="cW7-FF-SSw"/>
+                            <constraint firstItem="5Jh-C5-v1c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dpv-Z4-POc"/>
+                            <constraint firstItem="4PE-Q5-9Q2" firstAttribute="centerX" secondItem="lvH-af-xFa" secondAttribute="centerX" id="kTL-DC-haI"/>
+                            <constraint firstItem="o4b-4P-gwc" firstAttribute="centerX" secondItem="094-rA-Lm3" secondAttribute="centerX" id="oEl-Pm-b2q"/>
+                            <constraint firstItem="5Jh-C5-v1c" firstAttribute="centerX" secondItem="evR-nT-vnO" secondAttribute="centerX" id="tFm-I7-jAV"/>
+                            <constraint firstItem="094-rA-Lm3" firstAttribute="top" secondItem="o4b-4P-gwc" secondAttribute="bottom" constant="8" symbolic="YES" id="xSR-7i-ed5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="094-rA-Lm3" id="gOd-VX-saV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

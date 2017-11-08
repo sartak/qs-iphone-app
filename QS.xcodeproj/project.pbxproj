@@ -13,6 +13,7 @@
 		29D3D8961FB14FE60055CA54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D3D8951FB14FE60055CA54 /* Assets.xcassets */; };
 		29D3D8991FB14FE60055CA54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D3D8971FB14FE60055CA54 /* LaunchScreen.storyboard */; };
 		29D3D89C1FB14FE60055CA54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D3D89B1FB14FE60055CA54 /* main.m */; };
+		29D3D8A41FB150B90055CA54 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D3D8A31FB150B90055CA54 /* APIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		29D3D8981FB14FE60055CA54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29D3D89A1FB14FE60055CA54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29D3D89B1FB14FE60055CA54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29D3D8A21FB150B90055CA54 /* APIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		29D3D8A31FB150B90055CA54 /* APIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				29D3D88F1FB14FE60055CA54 /* ViewController.h */,
 				29D3D8901FB14FE60055CA54 /* ViewController.m */,
 				29D3D8921FB14FE60055CA54 /* Main.storyboard */,
+				29D3D8A21FB150B90055CA54 /* APIClient.h */,
+				29D3D8A31FB150B90055CA54 /* APIClient.m */,
 				29D3D8951FB14FE60055CA54 /* Assets.xcassets */,
 				29D3D8971FB14FE60055CA54 /* LaunchScreen.storyboard */,
 				29D3D89A1FB14FE60055CA54 /* Info.plist */,
@@ -145,6 +150,7 @@
 				29D3D8911FB14FE60055CA54 /* ViewController.m in Sources */,
 				29D3D89C1FB14FE60055CA54 /* main.m in Sources */,
 				29D3D88E1FB14FE60055CA54 /* AppDelegate.m in Sources */,
+				29D3D8A41FB150B90055CA54 /* APIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
